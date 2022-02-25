@@ -5,6 +5,10 @@ document.getElementById('btn').addEventListener('click', () => {
         .then(data => setData(data));
 })
 
+fetch(`http://api.openweathermap.org/data/2.5/weather?q=dhaka&appid=a6926e46a00aef4ecce809473727029a`)
+.then(res => res.json())
+.then(data => setData(data));
+
 function setData(data){
     document.getElementById('cityName').innerText = data.name;
     document.getElementById('temp').innerText = data.main.temp;
