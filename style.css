@@ -1,0 +1,45 @@
+body, html {
+    height: 100%;
+    margin: 0;
+  }
+  
+.container{
+    display: flex;
+    justify-content: center;
+    background-image: url('img/land-weather-forecast.jpg');
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.center{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    background-color: #00000069;
+    padding: 30px;
+    border-radius: 20px;
+}
+h1, h3, h5{
+    text-align: center;
+    color: white;
+    background-color: #000000ab;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+img{
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+    width: 30%;
+    background-color: rgba(0, 195, 255, 0.527);
+    border-radius: 50%;
+}
+button, input{
+    padding: 5px;
+    font-weight: 700;
+    color: #13628f;
+}
